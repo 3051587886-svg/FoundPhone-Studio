@@ -1,3 +1,5 @@
+import { MusicLink } from "../MusicLink";
+import { musicLink } from "../musicLinks";
 export { WeatherSkin, HealthSkin } from "./CalibratedSystemApps";
 import { AudioPlayer, useTrack } from "../audio";
 import { useSkinState } from "../skinState";
@@ -778,6 +780,7 @@ export function MusicSkin(p: Props) {
           {song.kind === "audio" && safeMedia(song.media) ? (
             <AudioPlayer p={p} item={song} />
           ) : (
+            musicLink(song.meta.listenUrl) ? <MusicLink item={song} /> :
             <button onClick={() => p.onItem(song)}>查看歌曲内容</button>
           )}
           <button

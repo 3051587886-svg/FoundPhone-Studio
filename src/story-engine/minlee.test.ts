@@ -38,6 +38,7 @@ describe("minlee story", () => {
     expect(work.data.phone.find((item) => item.id === "toto-voice-call")?.body).toContain("minlee：嗯，你慢点。");
     for (const app of ["music", "spotify", "netease"]) {
       expect(work.data[app].some((item) => item.title === "Ditto" && item.sender === "NewJeans")).toBe(true);
+      expect(work.data[app].every((item) => item.meta.listenUrl?.startsWith("https://www.youtube.com/watch?v="))).toBe(true);
     }
   });
   it("keeps the two formal chats and the reference profile", () => {

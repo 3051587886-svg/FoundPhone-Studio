@@ -1,3 +1,4 @@
+import { CallDialogue } from "./runtime/CallDialogue";
 import { StatusGlyph } from "./ios/StatusGlyph";
 import { SocialDetail, socialDetailApps } from "./skins/SocialDetails";
 import { NativeCalculator } from "./ios/Calculator";
@@ -634,14 +635,16 @@ function PhoneRuntime({
                   return (
                     <>
                       {record?.body && (
-                        <div
-                          className="call-transcript"
-                          role="region"
-                          aria-label="通话文字"
-                          style={{ whiteSpace: "pre-line", textAlign: "left", lineHeight: 1.7, maxHeight: "28vh", overflowY: "auto", padding: "0 24px", margin: "12px 0" }}
-                        >
-                          {record.body}
-                        </div>
+                        <CallDialogue
+                          record={record}
+                          history={s.ui?.phone?.["call-" + record.id]}
+                          onHistory={(history) => {
+                            const state = runtimeRef.current;
+                            update({ ...state, ui: { ...state.ui, phone: {
+                              ...state.ui?.phone, ["call-" + record.id]: history,
+                            } } });
+                          }}
+                        />
                       )}
                       {record?.kind === "audio" && safeMedia(record.media) ? (
                         <audio controls src={safeMedia(record.media)} />

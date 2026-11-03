@@ -1,0 +1,16 @@
+.incoming-call-screen .call-transcript {
+  width: min(330px, 90%); max-height: 32vh; overflow-y: auto;
+  text-align: left; line-height: 1.6; padding: 4px 8px; margin: 10px 0;
+  font-size: 14px; flex-shrink: 1;
+}
+.incoming-call-screen .call-line {
+  margin: 6px 0; padding: 9px 12px; border-radius: 12px;
+  background: rgba(255,255,255,.12); white-space: pre-line; font-size: 14px;
+}
+.incoming-call-screen .call-line-owner { margin-left: 20px; background: rgba(255,255,255,.23); }
+.incoming-call-screen .call-replies { display: grid; gap: 7px; margin: 14px 0 6px; }
+.incoming-call-screen .call-replies button {
+  border: 1px solid rgba(255,255,255,.6); border-radius: 16px;
+  background: #fff; color: #173c35; padding: 10px 12px; font-size: 14px; cursor: pointer;
+}
+.incoming-call-screen .call-done { font-size: 12px; opacity: .8; text-align: center; }

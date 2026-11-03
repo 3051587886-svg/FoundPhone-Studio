@@ -3,7 +3,7 @@
   "id": "minlee-payback-phone",
   "title": "minlee 的手机",
   "description": "虚构互动故事：泰国演员陈晓珉（minlee）与年纪小一些的陈拓安（toptap）同住出租屋，准备拍摄 payback 番外篇。toto 温柔细心，两人友情以上、恋人未满。对话、行程与动态均为创作，不代表现实私人记录。",
-  "revision": 7,
+  "revision": 8,
   "phone": {
     "owner": "陈晓珉 · minlee",
     "date": "2026-11-03",
@@ -1621,7 +1621,8 @@
         "time": "2026-11-03 21:41",
         "meta": {
           "status": "来电",
-          "transcript": "true"
+          "transcript": "true",
+          "callDialogue": "[{\"line\":\"toto：哥，你在哪呢？我来接你。\",\"choices\":[{\"label\":\"在楼下，刚出来。\",\"reply\":\"toto：好，站里面一点，外面有风。\"},{\"label\":\"还在门口，等你。\",\"reply\":\"toto：我快到了，你先别走远。\"}]},{\"line\":\"toto：晚饭吃了吗？\",\"choices\":[{\"label\":\"还没，等你一起。\",\"reply\":\"toto：那去上次那家吧，我陪你吃。\"},{\"label\":\"吃了一点，你呢？\",\"reply\":\"toto：也吃了一点，等会儿陪你慢慢走回去。\"}]},{\"line\":\"toto：其实……就是有点想你。\",\"choices\":[{\"label\":\"才分开一会儿。\",\"reply\":\"toto：嗯，我知道。还是想早点见到你。\"},{\"label\":\"那你快点来。\",\"reply\":\"toto：好。你别急，我马上就到了。\"}]}]"
         }
       }
     ],
@@ -2242,7 +2243,10 @@
         "sender": "NewJeans",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=pSUydWEqKwE"
+        }
       },
       {
         "id": "daily-music-2",
@@ -2252,7 +2256,10 @@
         "sender": "NewJeans",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=jM-K-h9gUdM"
+        }
       },
       {
         "id": "daily-music-3",
@@ -2262,7 +2269,10 @@
         "sender": "aespa",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=phuiiNCxRMg"
+        }
       },
       {
         "id": "daily-music-4",
@@ -2272,7 +2282,10 @@
         "sender": "aespa",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=D8VEhcPeSlc"
+        }
       },
       {
         "id": "daily-music-5",
@@ -2282,7 +2295,10 @@
         "sender": "IVE",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=6ZUIwj3FgUY"
+        }
       },
       {
         "id": "daily-music-6",
@@ -2292,7 +2308,10 @@
         "sender": "IVE",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=Y8JFxS1HlDo"
+        }
       },
       {
         "id": "daily-music-7",
@@ -2302,7 +2321,10 @@
         "sender": "LE SSERAFIM",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=hLvWy2b857I"
+        }
       },
       {
         "id": "daily-music-8",
@@ -2312,7 +2334,10 @@
         "sender": "BTS",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=xEeFrLSkMm8"
+        }
       },
       {
         "id": "daily-music-9",
@@ -2322,7 +2347,10 @@
         "sender": "BTS",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=gdZLi9oWNZg"
+        }
       },
       {
         "id": "daily-music-10",
@@ -2332,7 +2360,10 @@
         "sender": "TWICE",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=3ymwOvzhwHs"
+        }
       }
     ],
     "spotify": [
@@ -2344,7 +2375,10 @@
         "sender": "NewJeans",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=pSUydWEqKwE"
+        }
       },
       {
         "id": "daily-spotify-2",
@@ -2354,7 +2388,10 @@
         "sender": "NewJeans",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=jM-K-h9gUdM"
+        }
       },
       {
         "id": "daily-spotify-3",
@@ -2364,7 +2401,10 @@
         "sender": "aespa",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=phuiiNCxRMg"
+        }
       },
       {
         "id": "daily-spotify-4",
@@ -2374,7 +2414,10 @@
         "sender": "aespa",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=D8VEhcPeSlc"
+        }
       },
       {
         "id": "daily-spotify-5",
@@ -2384,7 +2427,10 @@
         "sender": "IVE",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=6ZUIwj3FgUY"
+        }
       },
       {
         "id": "daily-spotify-6",
@@ -2394,7 +2440,10 @@
         "sender": "IVE",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=Y8JFxS1HlDo"
+        }
       },
       {
         "id": "daily-spotify-7",
@@ -2404,7 +2453,10 @@
         "sender": "LE SSERAFIM",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=hLvWy2b857I"
+        }
       },
       {
         "id": "daily-spotify-8",
@@ -2414,7 +2466,10 @@
         "sender": "BTS",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=xEeFrLSkMm8"
+        }
       },
       {
         "id": "daily-spotify-9",
@@ -2424,7 +2479,10 @@
         "sender": "BTS",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=gdZLi9oWNZg"
+        }
       },
       {
         "id": "daily-spotify-10",
@@ -2434,7 +2492,10 @@
         "sender": "TWICE",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=3ymwOvzhwHs"
+        }
       }
     ],
     "netease": [
@@ -2446,7 +2507,10 @@
         "sender": "NewJeans",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=pSUydWEqKwE"
+        }
       },
       {
         "id": "daily-netease-2",
@@ -2456,7 +2520,10 @@
         "sender": "NewJeans",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=jM-K-h9gUdM"
+        }
       },
       {
         "id": "daily-netease-3",
@@ -2466,7 +2533,10 @@
         "sender": "aespa",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=phuiiNCxRMg"
+        }
       },
       {
         "id": "daily-netease-4",
@@ -2476,7 +2546,10 @@
         "sender": "aespa",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=D8VEhcPeSlc"
+        }
       },
       {
         "id": "daily-netease-5",
@@ -2486,7 +2559,10 @@
         "sender": "IVE",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=6ZUIwj3FgUY"
+        }
       },
       {
         "id": "daily-netease-6",
@@ -2496,7 +2572,10 @@
         "sender": "IVE",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=Y8JFxS1HlDo"
+        }
       },
       {
         "id": "daily-netease-7",
@@ -2506,7 +2585,10 @@
         "sender": "LE SSERAFIM",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=hLvWy2b857I"
+        }
       },
       {
         "id": "daily-netease-8",
@@ -2516,7 +2598,10 @@
         "sender": "BTS",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=xEeFrLSkMm8"
+        }
       },
       {
         "id": "daily-netease-9",
@@ -2526,7 +2611,10 @@
         "sender": "BTS",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=gdZLi9oWNZg"
+        }
       },
       {
         "id": "daily-netease-10",
@@ -2536,7 +2624,10 @@
         "sender": "TWICE",
         "kind": "audio",
         "folder": "出门路上 · K-pop",
-        "favorite": true
+        "favorite": true,
+        "meta": {
+          "listenUrl": "https://www.youtube.com/watch?v=3ymwOvzhwHs"
+        }
       }
     ]
   },
