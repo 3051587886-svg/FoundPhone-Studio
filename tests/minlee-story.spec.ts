@@ -35,6 +35,9 @@ test.describe(`minlee player at ${viewport.width}px`, () => {
     await image.decode();
     return image.naturalWidth;
   }, work.phone.wallpaper)).toBeGreaterThan(0);
+  await expect(page.locator(".device-notice")).toContainText("好想你");
+  await page.getByRole("button", { name: "2 条通知", exact: true }).click();
+  await expect(page.getByText("toto：你在哪呢，我来接你", { exact: true })).toBeVisible();
   await page.getByRole("button", { name: "轻触解锁" }).click();
   for (const digit of "0000") await page.getByRole("button", { name: "密码键" + digit, exact: true }).click();
   await expect(page.getByText("密码不正确", { exact: true })).toBeVisible();
@@ -45,13 +48,46 @@ test.describe(`minlee player at ${viewport.width}px`, () => {
   await expect(contact).toBeVisible();
   await expect(contact.locator("img")).toHaveAttribute("src", avatar!);
   await expect.poll(() => contact.locator("img").evaluate((image) => (image as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+  for (const name of ["同事", "老板"]) {
+    const row = page.locator(".kzkcr").filter({ hasText: name });
+    await expect(row.locator(".kzkn b")).toHaveText(name);
+    await row.click();
+    await expect(page.locator(".kzbub")).toHaveCount(2);
+    await page.waitForTimeout(2200);
+    await expect(page.locator(".incoming-call-screen")).toHaveCount(0);
+    await page.getByRole("button", { name: "返回", exact: true }).click();
+  }
   await contact.click();
+  await expect(page.locator(".incoming-call-screen")).toBeVisible({ timeout: 4000 });
+  await expect(page.locator(".incoming-call-screen h2")).toHaveText("toto");
+  await page.getByRole("button", { name: "接听", exact: true }).click();
+  await expect(page.locator(".incoming-call-screen small")).toContainText("通话中");
+  await page.getByRole("button", { name: "挂断", exact: true }).click();
   await page.getByText("那等我回来一起吃", { exact: false }).scrollIntoViewIfNeeded();
   await expect(page.getByText("那等我回来一起吃", { exact: false })).toBeVisible();
   const reply = page.getByText("好。我帮你留一份，不急。", { exact: false });
   await reply.scrollIntoViewIfNeeded();
   await expect(reply).toBeVisible();
   expect(errors).toEqual([]);
+});
+
+test("Instagram reference profile", async ({ page, request }) => {
+  const work = validateWork(unpackWork(await (await request.get("/work.json")).json()));
+  const apps = [...work.apps].sort((a, b) => Number(b.id === "instagram") - Number(a.id === "instagram"));
+  await page.route("**/work.json", (route) => route.fulfill({ json: packWork({ ...work, apps }) }));
+  await page.goto("/");
+  await page.getByRole("button", { name: "轻触解锁" }).click();
+  for (const digit of "0530") await page.getByRole("button", { name: "密码键" + digit, exact: true }).click();
+  await page.getByRole("button", { name: "打开Instagram", exact: true }).click();
+  await page.getByRole("button", { name: "个人主页", exact: true }).click();
+  const profile = page.locator(".mymy-instagram");
+  await expect(profile.locator(".igl2")).toHaveText("mii.iin_");
+  await expect(profile.locator(".ps")).toContainText("116");
+  await expect(profile.locator(".ps")).toContainText("61.2万");
+  await expect(profile.locator(".ps")).toContainText("100");
+  await expect(profile.locator(".pn")).toContainText("MINLEE");
+  await expect(profile.locator(".ig-profile-bio")).toContainText("🍀ENFP");
+  await expect(profile.locator(".pg2 button")).toHaveCount(2);
 });
 
 });

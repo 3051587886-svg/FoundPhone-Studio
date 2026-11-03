@@ -1007,7 +1007,11 @@ function AppContent({
               onAdd={onAdd}
               onBack={onBack}
               thread={thread}
-              onThread={setThread}
+              onThread={(title) => {
+                setThread(title);
+                const first = shown.find((item) => item.title === title);
+                if (title && first && !first.password && !creator) onRead(first.id);
+              }}
             />
           </Suspense>
         </div>
