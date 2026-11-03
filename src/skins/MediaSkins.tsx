@@ -1,3 +1,5 @@
+import { MusicLink } from "../MusicLink";
+import { musicLink } from "../musicLinks";
 import { AudioPlayer, useTrack } from "../audio";
 import { useSkinState } from "../skinState";
 import {
@@ -51,6 +53,7 @@ function TrackPlayer({
       {item.kind === "audio" && safeMedia(item.media) ? (
         <AudioPlayer p={p} item={item} />
       ) : (
+        musicLink(item.meta.listenUrl) ? <MusicLink item={item} /> :
         <button onClick={() => p.onItem(item)}>查看</button>
       )}
       <button aria-label="下一首" onClick={onNext}>
