@@ -15,6 +15,8 @@ test.describe(`minlee player at ${viewport.width}px`, () => {
   expect(Buffer.byteLength(JSON.stringify(packed))).toBeLessThan(2 * 1024 * 1024);
   const work = validateWork(unpackWork(packed));
   expect(work.phone.passcode).toBe("0530");
+  expect(work.data.notes.some((note) => note.title === "手机里的我")).toBe(false);
+  expect(JSON.stringify(work)).not.toContain("围读");
   const avatar = work.data.kakao.find((message) => !message.outgoing)?.avatar;
   expect(avatar).toMatch(/^data:image\/jpeg;base64,/);
   // Put KakaoTalk on the first page to isolate this test from launcher pagination.
@@ -44,9 +46,9 @@ test.describe(`minlee player at ${viewport.width}px`, () => {
   await expect(contact.locator("img")).toHaveAttribute("src", avatar!);
   await expect.poll(() => contact.locator("img").evaluate((image) => (image as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
   await contact.click();
-  await page.getByText("番外篇的新本子你收到没", { exact: false }).scrollIntoViewIfNeeded();
-  await expect(page.getByText("番外篇的新本子你收到没", { exact: false })).toBeVisible();
-  const reply = page.getByText("你坐过来，我试一次", { exact: false });
+  await page.getByText("那等我回来一起吃", { exact: false }).scrollIntoViewIfNeeded();
+  await expect(page.getByText("那等我回来一起吃", { exact: false })).toBeVisible();
+  const reply = page.getByText("好。我帮你留一份，不急。", { exact: false });
   await reply.scrollIntoViewIfNeeded();
   await expect(reply).toBeVisible();
   expect(errors).toEqual([]);
