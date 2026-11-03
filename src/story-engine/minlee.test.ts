@@ -41,10 +41,18 @@ describe("minlee story", () => {
       expect(work.data[app].every((item) => item.meta.listenUrl?.startsWith("https://www.youtube.com/watch?v="))).toBe(true);
     }
   });
+  it("unlocks the continuation only after an answered call is hung up", () => {
+    let state = dispatch(work, initialRuntime(work), "start");
+    expect(state.unlocked).not.toContain("kakao-toto-aftercall");
+    state = dispatch(work, state, "callDeclined", "toto-voice-call");
+    expect(state.unlocked).not.toContain("kakao-toto-aftercall");
+    state = dispatch(work, state, "callEnded", "toto-voice-call");
+    expect(state.unlocked).toContain("kakao-toto-aftercall");
+  });
   it("keeps the two formal chats and the reference profile", () => {
     for (const title of ["同事", "老板"]) {
       const messages = work.data.kakao.filter((item) => item.title === title);
-      expect(messages).toHaveLength(6);
+      expect(messages).toHaveLength(7);
       expect(messages[0].avatar).toBe("");
     }
     const profile = work.data.instagram.find((item) => item.folder === "个人资料");

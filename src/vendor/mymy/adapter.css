@@ -628,3 +628,7 @@
   width: 25px;
   height: 25px;
 }
+
+.mymy-kakao .kkt-replies { flex: 0 0 auto; display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 12px; background: #b7c8d5; }
+.mymy-kakao .kkt-replies button { padding: 9px 12px; border-radius: 16px; border: 1px solid #ffffff80; background: #fff7; color: #17242e; font-size: 13px; cursor: pointer; }
+.mymy-kakao .kkt-typing { font-size: 12px; color: #475a6a; padding: 10px 20px; margin: 0; }

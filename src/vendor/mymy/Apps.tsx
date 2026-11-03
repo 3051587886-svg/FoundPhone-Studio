@@ -1,3 +1,5 @@
+import { parseCallDialogue, validCallHistory } from "../../callDialogue";
+import { chatMessages, storedChatChoices } from "../../conversation";
 /* React/data adapters for dudwo5/Mymy UI templates: kt/ktn/KHD/bub,
  * igHome/igProfile/igDM/igSheet, xHome. See NOTICE.txt for permission.
  * Author content, DOM globals, timers and media dependencies are excluded. */
@@ -64,12 +66,29 @@ function Back({ onClick }: { onClick: () => void }) {
 export function MymyKakao(p: SkinProps) {
   const [tab, setTab] = useSkinState<string>(p, "mymyTab", "聊天"),
     [sent, setSent] = useSkinState<string[]>(p, "mymyKktSent", []),
+    [chatChoices, setChatChoices] = useSkinState<string[]>(p, "mymyChatChoices", []),
+    [typing, setTyping] = useState(false),
     [draft, setDraft] = useState(""),
     [query, setQuery] = useState(""),
     [menu, setMenu] = useState(false);
+  const dialogue = p.items.find((item) => item.title === p.thread && item.meta.chatDialogue);
+  const steps = parseCallDialogue(dialogue?.meta.chatDialogue);
+  const history = steps && dialogue ? validCallHistory(steps, storedChatChoices(chatChoices, dialogue.id)) : [];
+  const chooseReply = (index: number) => {
+    if (!dialogue || !steps?.[history.length]?.choices[index] || typing) return;
+    setTyping(true);
+    setChatChoices([...chatChoices, JSON.stringify([dialogue.id, String(index)])]);
+  };
+  useEffect(() => {
+    if (!typing) return;
+    const timer = setTimeout(() => setTyping(false), 700);
+    return () => clearTimeout(timer);
+  }, [typing]);
+  useEffect(() => setTyping(false), [p.thread]);
   const list = grouped(p.items),
     messages = [
-      ...p.items.filter((i) => i.title === p.thread),
+      ...p.items.filter((i) => i.title === p.thread && (!steps || i.id !== dialogue?.id)),
+      ...(steps && dialogue ? chatMessages(dialogue, steps, history, p.owner || "机主", p.virtualTime || "21:41", typing) : []),
       ...sent.flatMap((raw, index) => {
         try {
           const entry: unknown = JSON.parse(raw);
@@ -100,7 +119,7 @@ export function MymyKakao(p: SkinProps) {
   useEffect(() => {
     const node = scroll.current;
     if (node) node.scrollTop = node.scrollHeight;
-  }, [p.thread, messages.length]);
+  }, [p.thread, messages.length, typing]);
   return (
     <div className="mymy-ui mymy-kakao" data-mymy="kakao">
       {p.thread ? (
@@ -153,8 +172,16 @@ export function MymyKakao(p: SkinProps) {
                 </div>
               );
             })}
+            {typing && <p className="kkt-typing" role="status">对方正在输入…</p>}
             {!messages.length && <Blank />}
           </div>
+          {steps && !typing && steps[history.length] && !p.creator && (
+            <div className="kkt-replies" aria-label="聊天回复选项">
+              {steps[history.length].choices.map((choice, index) => (
+                <button key={index} onClick={() => chooseReply(index)}>{choice.label}</button>
+              ))}
+            </div>
+          )}
           <form
             className="kzinp"
             onSubmit={(e) => {
