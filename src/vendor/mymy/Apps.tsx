@@ -324,8 +324,9 @@ export function MymyInstagram(p: SkinProps) {
     [story, setStory] = useState(0),
     [draft, setDraft] = useState(""),
     [pop, setPop] = useState("");
+  const profile = p.items.find((i) => i.folder === "个人资料");
   const posts = p.items.filter(
-      (i) => i.folder !== "私信" && i.meta.story !== "true",
+      (i) => i.folder !== "私信" && i.folder !== "个人资料" && i.meta.story !== "true",
     ),
     stories = p.items.filter((i) => i.meta.story === "true"),
     dms = p.items.filter((i) => i.folder === "私信"),
@@ -443,7 +444,7 @@ export function MymyInstagram(p: SkinProps) {
             <ArrowLeft />
           </button>
           <span className="igl2">
-            {selected ? "帖子" : tab === "主页" ? "Instagram" : tab}
+            {selected ? "帖子" : tab === "个人主页" ? profile?.meta.handle || tab : tab === "主页" ? "Instagram" : tab}
           </span>
           <button aria-label="打开私信" onClick={() => setTab("私信")}>
             <Send />
@@ -476,23 +477,24 @@ export function MymyInstagram(p: SkinProps) {
           {!selected && tab === "个人主页" && (
             <>
               <div className="pf">
-                <Avatar name={p.owner || "机主"} />
+                <Avatar name={profile?.title || p.owner || "机主"} src={profile?.avatar} />
                 <div className="ps">
                   <div>
-                    <b>{posts.length}</b>
+                    <b>{profile?.meta.posts || posts.length}</b>
                     <small>帖子</small>
                   </div>
                   <div>
-                    <b>—</b>
+                    <b>{profile?.meta.followers || "—"}</b>
                     <small>粉丝</small>
                   </div>
                   <div>
-                    <b>—</b>
+                    <b>{profile?.meta.following || "—"}</b>
                     <small>关注</small>
                   </div>
                 </div>
               </div>
-              <p className="pn">{p.owner}</p>
+              <p className="pn">{profile?.meta.displayName || profile?.title || p.owner}{profile?.meta.verified === "true" && <span aria-label="已认证"> ✓</span>}</p>
+              {profile?.body && <p className="ig-profile-bio" style={{ whiteSpace: "pre-line", padding: "0 16px 12px" }}>{profile.body}</p>}
               <div className="ptab">
                 <div className="on">
                   <Grid />
