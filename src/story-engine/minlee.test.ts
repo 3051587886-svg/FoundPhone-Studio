@@ -30,10 +30,20 @@ describe("minlee story", () => {
     state = advance(work, dispatch(work, state, "read", "kakao-toto-01"), 3000);
     expect(state.incomingCall).toBeNull();
   });
+  it("fills content apps and includes a short call transcript and K-pop library", () => {
+    const utilityApps = new Set(["appstore", "settings", "calculator"]);
+    for (const app of work.apps.filter((app) => app.installed && !utilityApps.has(app.id))) {
+      expect(work.data[app.id]?.length, app.id).toBeGreaterThan(0);
+    }
+    expect(work.data.phone.find((item) => item.id === "toto-voice-call")?.body).toContain("minlee：嗯，你慢点。");
+    for (const app of ["music", "spotify", "netease"]) {
+      expect(work.data[app].some((item) => item.title === "Ditto" && item.sender === "NewJeans")).toBe(true);
+    }
+  });
   it("keeps the two formal chats and the reference profile", () => {
     for (const title of ["同事", "老板"]) {
       const messages = work.data.kakao.filter((item) => item.title === title);
-      expect(messages).toHaveLength(2);
+      expect(messages).toHaveLength(6);
       expect(messages[0].avatar).toBe("");
     }
     const profile = work.data.instagram.find((item) => item.folder === "个人资料");

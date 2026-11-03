@@ -52,7 +52,7 @@ test.describe(`minlee player at ${viewport.width}px`, () => {
     const row = page.locator(".kzkcr").filter({ hasText: name });
     await expect(row.locator(".kzkn b")).toHaveText(name);
     await row.click();
-    await expect(page.locator(".kzbub")).toHaveCount(2);
+    await expect(page.locator(".kzbub")).toHaveCount(6);
     await page.waitForTimeout(2200);
     await expect(page.locator(".incoming-call-screen")).toHaveCount(0);
     await page.getByRole("button", { name: "返回", exact: true }).click();
@@ -62,6 +62,7 @@ test.describe(`minlee player at ${viewport.width}px`, () => {
   await expect(page.locator(".incoming-call-screen h2")).toHaveText("toto");
   await page.getByRole("button", { name: "接听", exact: true }).click();
   await expect(page.locator(".incoming-call-screen small")).toContainText("通话中");
+  await expect(page.getByRole("region", { name: "通话文字" })).toContainText("就是有点想你");
   await page.getByRole("button", { name: "挂断", exact: true }).click();
   await page.getByText("那等我回来一起吃", { exact: false }).scrollIntoViewIfNeeded();
   await expect(page.getByText("那等我回来一起吃", { exact: false })).toBeVisible();
@@ -87,7 +88,7 @@ test("Instagram reference profile", async ({ page, request }) => {
   await expect(profile.locator(".ps")).toContainText("100");
   await expect(profile.locator(".pn")).toContainText("MINLEE");
   await expect(profile.locator(".ig-profile-bio")).toContainText("🍀ENFP");
-  await expect(profile.locator(".pg2 button")).toHaveCount(2);
+  await expect(profile.locator(".pg2 button")).toHaveCount(4);
 });
 
 });
