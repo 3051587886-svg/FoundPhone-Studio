@@ -3,7 +3,7 @@
   "id": "minlee-payback-phone",
   "title": "minlee 的手机",
   "description": "虚构互动故事：泰国演员陈晓珉（minlee）与年纪小一些的陈拓安（toptap）同住出租屋，准备拍摄 payback 番外篇。toto 温柔细心，两人友情以上、恋人未满。对话、行程与动态均为创作，不代表现实私人记录。",
-  "revision": 6,
+  "revision": 7,
   "phone": {
     "owner": "陈晓珉 · minlee",
     "date": "2026-11-03",
@@ -1113,6 +1113,30 @@
           "body": "收到，谢谢。",
           "senderId": "owner",
           "time": "2026-11-03 18:05"
+        },
+        {
+          "id": "kakao-colleague-3",
+          "senderId": "owner",
+          "body": "明天的资料还是用邮件那一版吗？",
+          "time": "2026-11-03 18:20"
+        },
+        {
+          "id": "kakao-colleague-4",
+          "senderId": "kakao-colleague",
+          "body": "是的，如有调整会在群里通知。",
+          "time": "2026-11-03 18:21"
+        },
+        {
+          "id": "kakao-colleague-5",
+          "senderId": "owner",
+          "body": "好的，谢谢。",
+          "time": "2026-11-03 18:22"
+        },
+        {
+          "id": "kakao-colleague-6",
+          "senderId": "kakao-colleague",
+          "body": "不客气。",
+          "time": "2026-11-03 18:23"
         }
       ]
     },
@@ -1136,6 +1160,232 @@
           "body": "好的，收到。",
           "senderId": "owner",
           "time": "2026-11-03 18:15"
+        },
+        {
+          "id": "kakao-boss-3",
+          "senderId": "kakao-boss",
+          "body": "请提前确认好资料，现场有变动及时反馈。",
+          "time": "2026-11-03 18:20"
+        },
+        {
+          "id": "kakao-boss-4",
+          "senderId": "owner",
+          "body": "好的，出门前我会再核对一遍。",
+          "time": "2026-11-03 18:21"
+        },
+        {
+          "id": "kakao-boss-5",
+          "senderId": "kakao-boss",
+          "body": "辛苦了，今晚早点休息。",
+          "time": "2026-11-03 18:22"
+        },
+        {
+          "id": "kakao-boss-6",
+          "senderId": "owner",
+          "body": "谢谢，您也早点休息。",
+          "time": "2026-11-03 18:23"
+        }
+      ]
+    },
+    {
+      "id": "daily-chat-messages",
+      "app": "messages",
+      "title": "工作助理",
+      "participants": [
+        "owner",
+        "assistant"
+      ],
+      "messages": [
+        {
+          "id": "daily-msg-messages-1",
+          "senderId": "assistant",
+          "body": "明天没有早班通告，时间确认后通知。",
+          "time": "2026-11-03 19:10"
+        },
+        {
+          "id": "daily-msg-messages-2",
+          "senderId": "owner",
+          "body": "好的，收到。",
+          "time": "2026-11-03 19:11"
+        }
+      ]
+    },
+    {
+      "id": "daily-chat-qq",
+      "app": "qq",
+      "title": "今天也想放假",
+      "participants": [
+        "owner",
+        "friend"
+      ],
+      "messages": [
+        {
+          "id": "daily-msg-qq-1",
+          "senderId": "friend",
+          "body": "你的超市清单写完没？",
+          "time": "2026-11-03 19:10"
+        },
+        {
+          "id": "daily-msg-qq-2",
+          "senderId": "owner",
+          "body": "写了，最后还加了一个枕头。",
+          "time": "2026-11-03 19:11"
+        },
+        {
+          "id": "daily-msg-qq-3",
+          "senderId": "friend",
+          "body": "懂，你的清单，两个人的生活。",
+          "time": "2026-11-03 19:12"
+        },
+        {
+          "id": "daily-msg-qq-4",
+          "senderId": "owner",
+          "body": "少乱说。",
+          "time": "2026-11-03 19:13"
+        }
+      ]
+    },
+    {
+      "id": "daily-chat-whatsapp",
+      "app": "whatsapp",
+      "title": "工作助理",
+      "participants": [
+        "owner",
+        "assistant"
+      ],
+      "messages": [
+        {
+          "id": "daily-msg-whatsapp-1",
+          "senderId": "assistant",
+          "body": "采访照片已整理，确认后再发给你。",
+          "time": "2026-11-03 19:10"
+        },
+        {
+          "id": "daily-msg-whatsapp-2",
+          "senderId": "owner",
+          "body": "谢谢，收到后我再看。",
+          "time": "2026-11-03 19:11"
+        }
+      ]
+    },
+    {
+      "id": "daily-chat-telegram",
+      "app": "telegram",
+      "title": "今天也想放假",
+      "participants": [
+        "owner",
+        "friend"
+      ],
+      "messages": [
+        {
+          "id": "daily-msg-telegram-1",
+          "senderId": "friend",
+          "body": "你要的做饭视频我存好了。",
+          "time": "2026-11-03 19:10"
+        },
+        {
+          "id": "daily-msg-telegram-2",
+          "senderId": "owner",
+          "body": "发我一下，明天试试。",
+          "time": "2026-11-03 19:11"
+        },
+        {
+          "id": "daily-msg-telegram-3",
+          "senderId": "friend",
+          "body": "先从煎鸡蛋开始，不要挑战厨房。",
+          "time": "2026-11-03 19:12"
+        },
+        {
+          "id": "daily-msg-telegram-4",
+          "senderId": "owner",
+          "body": "我没那么差吧。",
+          "time": "2026-11-03 19:13"
+        }
+      ]
+    },
+    {
+      "id": "daily-chat-discord",
+      "app": "discord",
+      "title": "今天也想放假",
+      "participants": [
+        "owner",
+        "friend"
+      ],
+      "messages": [
+        {
+          "id": "daily-msg-discord-1",
+          "senderId": "friend",
+          "body": "今晚游戏来不来？",
+          "time": "2026-11-03 19:10",
+          "folder": "闲聊",
+          "meta": {
+            "server": "下班以后"
+          }
+        },
+        {
+          "id": "daily-msg-discord-2",
+          "senderId": "owner",
+          "body": "今天有点累，下次吧。",
+          "time": "2026-11-03 19:11",
+          "folder": "闲聊",
+          "meta": {
+            "server": "下班以后"
+          }
+        },
+        {
+          "id": "daily-msg-discord-3",
+          "senderId": "friend",
+          "body": "行，给你留个位。",
+          "time": "2026-11-03 19:12",
+          "folder": "闲聊",
+          "meta": {
+            "server": "下班以后"
+          }
+        },
+        {
+          "id": "daily-msg-discord-4",
+          "senderId": "owner",
+          "body": "谢谢，周末叫我。",
+          "time": "2026-11-03 19:13",
+          "folder": "闲聊",
+          "meta": {
+            "server": "下班以后"
+          }
+        }
+      ]
+    },
+    {
+      "id": "daily-chat-messenger",
+      "app": "messenger",
+      "title": "今天也想放假",
+      "participants": [
+        "owner",
+        "friend"
+      ],
+      "messages": [
+        {
+          "id": "daily-msg-messenger-1",
+          "senderId": "friend",
+          "body": "那家咖啡店周末有座，你去吗？",
+          "time": "2026-11-03 19:10"
+        },
+        {
+          "id": "daily-msg-messenger-2",
+          "senderId": "owner",
+          "body": "可以，等我看一下时间。",
+          "time": "2026-11-03 19:11"
+        },
+        {
+          "id": "daily-msg-messenger-3",
+          "senderId": "friend",
+          "body": "你先问你的室友，我懂流程。",
+          "time": "2026-11-03 19:12"
+        },
+        {
+          "id": "daily-msg-messenger-4",
+          "senderId": "owner",
+          "body": "只是确认有没有事。",
+          "time": "2026-11-03 19:13"
         }
       ]
     }
@@ -1192,6 +1442,18 @@
         "body": "10:00 化妆，11:30 开始。\n与 toptap 一起到场。",
         "time": "2026-11-03 10:00",
         "kind": "event"
+      },
+      {
+        "id": "daily-calendar-2",
+        "title": "一起去超市",
+        "body": "买牛奶、鸡蛋、垃圾袋，陪 toto 看枕头。",
+        "time": "2026-11-03 20:30"
+      },
+      {
+        "id": "daily-calendar-3",
+        "title": "浴室挂钩报修",
+        "body": "先拍松动的位置，确认房东方便的时间。",
+        "time": "2026-11-03 20:30"
       }
     ],
     "reminders": [
@@ -1285,6 +1547,30 @@
           "minlee：下次我买，你选想吃的。",
           "toptap 回复 minlee：好。"
         ]
+      },
+      {
+        "id": "daily-instagram-4",
+        "title": "便利店回程",
+        "body": "牛奶和鸡蛋买好了。今天没有忘带购物袋。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ]
+      },
+      {
+        "id": "daily-instagram-5",
+        "title": "明天再说",
+        "body": "想买的东西写了一页，先睡觉。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ]
       }
     ],
     "twitter": [
@@ -1299,6 +1585,958 @@
           "toptap：嗯，睡醒了我们再出门。",
           "今天也想放假：那我也先把闹钟关了。"
         ]
+      },
+      {
+        "id": "daily-twitter-2",
+        "title": "家里小事",
+        "body": "买了两份晚饭，终于不用盯着手机等外卖。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ]
+      },
+      {
+        "id": "daily-twitter-3",
+        "title": "休息",
+        "body": "今天的目标：早点睡。先从放下手机开始。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ]
+      }
+    ],
+    "phone": [
+      {
+        "id": "toto-voice-call",
+        "title": "toto",
+        "sender": "toto",
+        "kind": "call",
+        "body": "toto：哥，你在哪呢？我来接你。\nminlee：在楼下，刚出来。\ntoto：好，站里面一点，外面有风。\nminlee：嗯，你慢点。\ntoto：知道了。就是有点想你。",
+        "time": "2026-11-03 21:41",
+        "meta": {
+          "status": "来电",
+          "transcript": "true"
+        }
+      }
+    ],
+    "safari": [
+      {
+        "id": "daily-safari-1",
+        "title": "不太辣的晚饭做法",
+        "body": "收藏：鸡蛋汤、清炒蔬菜、简单盖饭。先从不会糊锅的开始。",
+        "time": "2026-11-03 20:30"
+      },
+      {
+        "id": "daily-safari-2",
+        "title": "高一点的枕头怎么选",
+        "body": "看肩颈支撑，最好到店试一下。toto 说现在那只太矮。",
+        "time": "2026-11-03 20:30"
+      }
+    ],
+    "mail": [
+      {
+        "id": "daily-mail-1",
+        "title": "采访资料确认",
+        "body": "工作助理：今天的采访资料已整理。后续安排确认后另行通知。\nminlee：收到，辛苦了。",
+        "time": "2026-11-03 20:30",
+        "meta": {},
+        "folder": "收件箱"
+      },
+      {
+        "id": "daily-mail-2",
+        "title": "草稿：周末报修",
+        "body": "浴室门后的挂钩有些松动，想问一下什么时候方便来看。",
+        "time": "2026-11-03 20:30",
+        "meta": {},
+        "folder": "草稿"
+      }
+    ],
+    "clock": [
+      {
+        "id": "daily-clock-1",
+        "title": "不用太早起",
+        "body": "休息日闹钟，先吃早餐再出门。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "clock": "09:30",
+          "city": "曼谷"
+        }
+      },
+      {
+        "id": "daily-clock-2",
+        "title": "收衣服",
+        "body": "傍晚下雨前看一下阳台。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "clock": "17:30",
+          "city": "曼谷"
+        }
+      }
+    ],
+    "files": [
+      {
+        "id": "daily-files-1",
+        "title": "超市清单.txt",
+        "body": "牛奶、鸡蛋、垃圾袋、枕套。出门前看一下冰箱。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "extension": "TXT",
+          "size": "清单"
+        }
+      },
+      {
+        "id": "daily-files-2",
+        "title": "采访小记.txt",
+        "body": "提前确认时间；带水；回来把衣服挂好。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "extension": "TXT",
+          "size": "笔记"
+        }
+      }
+    ],
+    "maps": [
+      {
+        "id": "daily-maps-1",
+        "title": "路口饭店",
+        "body": "上次买双人晚饭的店。备注：一份少辣，一份正常。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "address": "故事中的路口",
+          "x": "38",
+          "y": "42"
+        }
+      },
+      {
+        "id": "daily-maps-2",
+        "title": "楼下便利店",
+        "body": "牛奶、鸡蛋和垃圾袋放在一起买。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "address": "故事中的楼下",
+          "x": "58",
+          "y": "60"
+        }
+      }
+    ],
+    "weather": [
+      {
+        "id": "daily-weather-1",
+        "title": "曼谷",
+        "body": "故事天气：多云，晚间可能有阵雨。门边的小伞记得带。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "temperature": "29",
+          "condition": "多云",
+          "high": "32",
+          "low": "26",
+          "humidity": "故事天气"
+        }
+      },
+      {
+        "id": "daily-weather-2",
+        "title": "明天",
+        "body": "故事天气：午后闷热，出门带水。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "temperature": "30",
+          "condition": "多云",
+          "high": "33",
+          "low": "26",
+          "humidity": "故事天气"
+        }
+      }
+    ],
+    "wallet": [
+      {
+        "id": "daily-wallet-1",
+        "title": "生活开销",
+        "body": "虚构记账：超市零食，自己付。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "amount": "生活记账",
+          "number": "虚构记录"
+        },
+        "folder": "交易"
+      },
+      {
+        "id": "daily-wallet-2",
+        "title": "晚饭",
+        "body": "虚构记账：下次换我请 toto。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "amount": "晚饭记账",
+          "number": "虚构记录"
+        },
+        "folder": "交易"
+      }
+    ],
+    "health": [
+      {
+        "id": "daily-health-1",
+        "title": "今日步数",
+        "body": "故事记录：采访结束后走了一小段路。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "metric": "步数",
+          "value": "6200",
+          "unit": "步"
+        }
+      },
+      {
+        "id": "daily-health-2",
+        "title": "喝水提醒",
+        "body": "包里带水，别又只喝咖啡。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "metric": "饮水",
+          "value": "1200",
+          "unit": "毫升"
+        }
+      }
+    ],
+    "find": [
+      {
+        "id": "daily-find-1",
+        "title": "耳机",
+        "body": "最后记得放在玄关抽屉，和钥匙分开。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "location": "玄关抽屉",
+          "status": "物品备忘",
+          "x": "35",
+          "y": "45"
+        },
+        "folder": "设备"
+      },
+      {
+        "id": "daily-find-2",
+        "title": "充电宝",
+        "body": "已充好电，放在包的侧袋。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "location": "包的侧袋",
+          "status": "物品备忘",
+          "x": "62",
+          "y": "52"
+        },
+        "folder": "设备"
+      }
+    ],
+    "weibo": [
+      {
+        "id": "daily-weibo-1",
+        "title": "休息日计划",
+        "body": "明天打算补觉、逛超市。希望不要只完成补觉。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ]
+      },
+      {
+        "id": "daily-weibo-2",
+        "title": "收工以后",
+        "body": "今天最想做的事：洗澡、吃饭、把闹钟关掉。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ]
+      }
+    ],
+    "redbook": [
+      {
+        "id": "daily-redbook-1",
+        "title": "出租屋收纳",
+        "body": "小厨房先整理台面，再找杯子的位置。收藏，周末试。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ]
+      },
+      {
+        "id": "daily-redbook-2",
+        "title": "两人份晚饭",
+        "body": "鸡蛋汤加盖饭。看起来不难，明天问问家里那位想不想吃。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ]
+      }
+    ],
+    "douyin": [
+      {
+        "id": "daily-douyin-1",
+        "title": "十分钟做饭",
+        "body": "收藏了一份简单鸡蛋汤教程。下次换我做。",
+        "time": "2026-11-03 20:30",
+        "sender": "日常收藏"
+      },
+      {
+        "id": "daily-douyin-2",
+        "title": "晾衣服小技巧",
+        "body": "衣架间隔留大一点。终于知道上次为什么一直不干了。",
+        "time": "2026-11-03 20:30",
+        "sender": "日常收藏"
+      }
+    ],
+    "bilibili": [
+      {
+        "id": "daily-bilibili-1",
+        "title": "小厨房整理",
+        "body": "收藏的收纳视频，准备周末照着整理。",
+        "time": "2026-11-03 20:30",
+        "sender": "日常收藏"
+      },
+      {
+        "id": "daily-bilibili-2",
+        "title": "下班轻松看",
+        "body": "一个很慢的生活记录，适合吃饭时看。",
+        "time": "2026-11-03 20:30",
+        "sender": "日常收藏"
+      }
+    ],
+    "alipay": [
+      {
+        "id": "daily-alipay-1",
+        "title": "日用品记账",
+        "body": "虚构生活账本：洗衣液、垃圾袋、晾衣夹。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "merchant": "生活记账",
+          "amount": "日用品",
+          "status": "虚构记录"
+        }
+      },
+      {
+        "id": "daily-alipay-2",
+        "title": "超市采购",
+        "body": "虚构记账：先对一下清单，避免两个人重复买。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "merchant": "超市",
+          "amount": "采购清单",
+          "status": "虚构记录"
+        }
+      }
+    ],
+    "taobao": [
+      {
+        "id": "daily-taobao-1",
+        "title": "枕套两只装",
+        "body": "购物收藏：颜色选浅灰，先问 toto。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "status": "待选购",
+          "price": "待确认"
+        },
+        "folder": "商品"
+      },
+      {
+        "id": "daily-taobao-2",
+        "title": "浴室防滑垫",
+        "body": "购物清单：量好尺寸再决定。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "status": "待选购",
+          "price": "待确认"
+        },
+        "folder": "商品"
+      }
+    ],
+    "delivery": [
+      {
+        "id": "daily-delivery-1",
+        "title": "路口盖饭",
+        "body": "收藏店铺：少辣、不放香菜。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "address": "作品内虚构店铺",
+          "status": "已收藏",
+          "price": "待确认"
+        },
+        "folder": "商家"
+      },
+      {
+        "id": "daily-delivery-2",
+        "title": "晚饭两份",
+        "body": "虚构订单备注：一份留给室友，先放桌上。",
+        "time": "2026-11-03 20:30",
+        "meta": {
+          "address": "作品内虚构订单",
+          "status": "已完成",
+          "price": "生活记账"
+        },
+        "folder": "订单"
+      }
+    ],
+    "forum": [
+      {
+        "id": "daily-forum-1",
+        "title": "怎么和室友分家务比较自然",
+        "body": "我说今天我来晾衣服，他已经把衣架递过来了。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ]
+      },
+      {
+        "id": "daily-forum-2",
+        "title": "枕头太矮真的会影响睡觉吗",
+        "body": "想去店里试一下，有没有挑选经验？",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ]
+      }
+    ],
+    "tiktok": [
+      {
+        "id": "daily-tiktok-1",
+        "title": "便利店日常",
+        "body": "收藏：简单早餐搭配。豆奶选不太甜的。",
+        "time": "2026-11-03 20:30",
+        "sender": "日常收藏"
+      },
+      {
+        "id": "daily-tiktok-2",
+        "title": "雨天回家",
+        "body": "门边的伞又被整理好了，雨天也没那么烦。",
+        "time": "2026-11-03 20:30",
+        "sender": "日常收藏"
+      }
+    ],
+    "youtube": [
+      {
+        "id": "daily-youtube-1",
+        "title": "简单早餐做法",
+        "body": "收藏：吐司、鸡蛋和豆奶。准备明天试一下。",
+        "time": "2026-11-03 20:30",
+        "sender": "日常收藏"
+      },
+      {
+        "id": "daily-youtube-2",
+        "title": "安静整理房间",
+        "body": "慢慢收拾，不用一次做完。",
+        "time": "2026-11-03 20:30",
+        "sender": "日常收藏"
+      }
+    ],
+    "snapchat": [
+      {
+        "id": "daily-snapchat-1",
+        "title": "傍晚的灯",
+        "body": "回家时楼道灯亮了。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ],
+        "meta": {},
+        "folder": "回忆"
+      },
+      {
+        "id": "daily-snapchat-2",
+        "title": "给你留的一份",
+        "body": "芒果已经切好，放在冰箱上层。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ],
+        "meta": {},
+        "folder": "回忆"
+      }
+    ],
+    "facebook": [
+      {
+        "id": "daily-facebook-1",
+        "title": "今天的小事",
+        "body": "采访结束，顺路买了家里缺的东西。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ]
+      },
+      {
+        "id": "daily-facebook-2",
+        "title": "周末",
+        "body": "先整理阳台，再去吃上次说的那家饭。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ]
+      }
+    ],
+    "reddit": [
+      {
+        "id": "daily-reddit-1",
+        "title": "Small kitchen, small wins",
+        "body": "把台面清出来一点，做饭就没那么慌了。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ],
+        "meta": {
+          "community": "everyday",
+          "votes": "12"
+        }
+      },
+      {
+        "id": "daily-reddit-2",
+        "title": "A quiet day off",
+        "body": "睡醒吃早餐，买日用品，再慢慢走回家。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ],
+        "meta": {
+          "community": "slowdays",
+          "votes": "8"
+        }
+      }
+    ],
+    "netflix": [
+      {
+        "id": "daily-netflix-1",
+        "title": "雨夜片单",
+        "body": "虚构收藏：节奏慢一点的生活电影，等两个人都有空再看。",
+        "time": "2026-11-03 20:30"
+      },
+      {
+        "id": "daily-netflix-2",
+        "title": "周末再看",
+        "body": "虚构片单：上次看到一半的轻喜剧，这次记得关灯。",
+        "time": "2026-11-03 20:30"
+      }
+    ],
+    "pinterest": [
+      {
+        "id": "daily-pinterest-1",
+        "title": "出租屋的小角落",
+        "body": "浅灰床品、暖色台灯、留一点空白。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ],
+        "meta": {},
+        "folder": "出租屋"
+      },
+      {
+        "id": "daily-pinterest-2",
+        "title": "早餐灵感",
+        "body": "豆奶、鸡蛋、吐司。先保存，明天再决定。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ],
+        "meta": {},
+        "folder": "早餐"
+      }
+    ],
+    "threads": [
+      {
+        "id": "daily-threads-1",
+        "title": "今日份",
+        "body": "以前购物清单写自己要什么，现在还要记一个人的枕头。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ]
+      },
+      {
+        "id": "daily-threads-2",
+        "title": "收衣服",
+        "body": "两个人的黑色上衣混在一起，已经不想分了。",
+        "time": "2026-11-03 20:30",
+        "kind": "post",
+        "sender": "minlee",
+        "likes": 12,
+        "comments": [
+          "今天也想放假：看到了，休息日也安排得满满的。"
+        ]
+      }
+    ],
+    "photos": [
+      {
+        "id": "daily-photos-1",
+        "title": "回家的路",
+        "body": "照片小记：今天的采访结束了。",
+        "time": "2026-11-03 20:30"
+      },
+      {
+        "id": "daily-photos-2",
+        "title": "留给他的水果",
+        "body": "照片小记：芒果切好放冰箱上层。",
+        "time": "2026-11-03 20:30"
+      }
+    ],
+    "camera": [
+      {
+        "id": "daily-camera-1",
+        "title": "今天的随手拍",
+        "body": "拍照备忘：下次出门带上那顶帽子。",
+        "time": "2026-11-03 20:30"
+      },
+      {
+        "id": "daily-camera-2",
+        "title": "超市清单存一下",
+        "body": "怕走到货架前又忘记要买什么。",
+        "time": "2026-11-03 20:30"
+      }
+    ],
+    "music": [
+      {
+        "id": "daily-music-1",
+        "title": "Ditto",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "NewJeans",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-music-2",
+        "title": "Hype Boy",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "NewJeans",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-music-3",
+        "title": "Supernova",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "aespa",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-music-4",
+        "title": "Drama",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "aespa",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-music-5",
+        "title": "I AM",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "IVE",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-music-6",
+        "title": "LOVE DIVE",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "IVE",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-music-7",
+        "title": "Perfect Night",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "LE SSERAFIM",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-music-8",
+        "title": "Spring Day",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "BTS",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-music-9",
+        "title": "Dynamite",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "BTS",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-music-10",
+        "title": "Feel Special",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "TWICE",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      }
+    ],
+    "spotify": [
+      {
+        "id": "daily-spotify-1",
+        "title": "Ditto",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "NewJeans",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-spotify-2",
+        "title": "Hype Boy",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "NewJeans",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-spotify-3",
+        "title": "Supernova",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "aespa",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-spotify-4",
+        "title": "Drama",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "aespa",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-spotify-5",
+        "title": "I AM",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "IVE",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-spotify-6",
+        "title": "LOVE DIVE",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "IVE",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-spotify-7",
+        "title": "Perfect Night",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "LE SSERAFIM",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-spotify-8",
+        "title": "Spring Day",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "BTS",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-spotify-9",
+        "title": "Dynamite",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "BTS",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-spotify-10",
+        "title": "Feel Special",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "TWICE",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      }
+    ],
+    "netease": [
+      {
+        "id": "daily-netease-1",
+        "title": "Ditto",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "NewJeans",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-netease-2",
+        "title": "Hype Boy",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "NewJeans",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-netease-3",
+        "title": "Supernova",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "aespa",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-netease-4",
+        "title": "Drama",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "aespa",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-netease-5",
+        "title": "I AM",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "IVE",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-netease-6",
+        "title": "LOVE DIVE",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "IVE",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-netease-7",
+        "title": "Perfect Night",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "LE SSERAFIM",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-netease-8",
+        "title": "Spring Day",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "BTS",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-netease-9",
+        "title": "Dynamite",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "BTS",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
+      },
+      {
+        "id": "daily-netease-10",
+        "title": "Feel Special",
+        "body": "出门路上 · K-pop 收藏曲目",
+        "time": "2026-11-03 20:30",
+        "sender": "TWICE",
+        "kind": "audio",
+        "folder": "出门路上 · K-pop",
+        "favorite": true
       }
     ]
   },

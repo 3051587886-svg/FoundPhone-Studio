@@ -631,10 +631,24 @@ function PhoneRuntime({
                   const record = work.data.phone?.find(
                     (i) => i.id === s.incomingCall?.target,
                   );
-                  return record?.kind === "audio" && safeMedia(record.media) ? (
-                    <audio controls src={safeMedia(record.media)} />
-                  ) : (
-                    <p>这是一通虚构来电。</p>
+                  return (
+                    <>
+                      {record?.body && (
+                        <div
+                          className="call-transcript"
+                          role="region"
+                          aria-label="通话文字"
+                          style={{ whiteSpace: "pre-line", textAlign: "left", lineHeight: 1.7, maxHeight: "28vh", overflowY: "auto", padding: "0 24px", margin: "12px 0" }}
+                        >
+                          {record.body}
+                        </div>
+                      )}
+                      {record?.kind === "audio" && safeMedia(record.media) ? (
+                        <audio controls src={safeMedia(record.media)} />
+                      ) : !record?.body ? (
+                        <p>这是一通虚构来电。</p>
+                      ) : null}
+                    </>
                   );
                 })()}
               <div className="incoming-actions">
