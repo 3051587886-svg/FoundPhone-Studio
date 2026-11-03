@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { Phone } from "../Phone";
+import { unpackWork } from "../story-engine/workBundle";
 import { validateWork, type Work } from "../schema";
 import "../styles.css";
 import "./player.css";
@@ -22,7 +23,7 @@ function StoryPlayer() {
         return r.json();
       })
       .then((x) => {
-        const w = validateWork(x);
+        const w = validateWork(unpackWork(x));
         document.title =
           w.title === "捡手机" ? "捡手机" : w.title + " · 捡手机";
         setWork(w);
