@@ -4,6 +4,9 @@ on:
     branches: ['story/**']
   pull_request:
     branches: [main]
+concurrency:
+  group: story-checks-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
@@ -23,3 +26,5 @@ jobs:
       - run: npm run story:validate
       - run: npm run story:test
       - run: npm run build
+      - run: npx playwright install --with-deps chrome
+      - run: npm run test:e2e -- minlee-story.spec.ts
