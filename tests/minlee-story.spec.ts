@@ -2,7 +2,13 @@ import { test, expect } from "@playwright/test";
 import { validateWork } from "../src/schema";
 import { packWork, unpackWork } from "../src/story-engine/workBundle";
 
-test("minlee lock, supplied photos and KakaoTalk conversation", async ({ page, request }) => {
+for (const viewport of [
+  { width: 1440, height: 1000 },
+  { width: 390, height: 844 },
+]) {
+test.describe(`minlee player at ${viewport.width}px`, () => {
+  test.use({ viewport, hasTouch: viewport.width < 500, isMobile: viewport.width < 500 });
+  test("minlee lock, supplied photos and KakaoTalk conversation", async ({ page, request }) => {
   const response = await request.get("/work.json");
   expect(response.ok()).toBe(true);
   const packed = await response.json();
@@ -45,3 +51,6 @@ test("minlee lock, supplied photos and KakaoTalk conversation", async ({ page, r
   await expect(reply).toBeVisible();
   expect(errors).toEqual([]);
 });
+
+});
+}
