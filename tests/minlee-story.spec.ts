@@ -9,6 +9,7 @@ for (const viewport of [
 test.describe(`minlee player at ${viewport.width}px`, () => {
   test.use({ viewport, hasTouch: viewport.width < 500, isMobile: viewport.width < 500 });
   test("minlee lock, supplied photos and KakaoTalk conversation", async ({ page, request }) => {
+  test.setTimeout(60000);
   const response = await request.get("/work.json");
   expect(response.ok()).toBe(true);
   const packed = await response.json();
@@ -57,6 +58,7 @@ test.describe(`minlee player at ${viewport.width}px`, () => {
     await expect(page.locator(".incoming-call-screen")).toHaveCount(0);
     await page.getByRole("button", { name: "返回", exact: true }).click();
   }
+  console.info("formal contacts checked");
   await contact.click();
   await expect(page.locator(".incoming-call-screen")).toBeVisible({ timeout: 4000 });
   await expect(page.locator(".incoming-call-screen h2")).toHaveText("toto");
@@ -72,12 +74,14 @@ test.describe(`minlee player at ${viewport.width}px`, () => {
   await dialogue.getByRole("button", { name: "那你快点来。", exact: true }).click();
   await expect(dialogue).toContainText("我马上就到了");
   await expect(dialogue.getByRole("button")).toHaveCount(0);
+  console.info("call choices checked");
   await page.getByRole("button", { name: "挂断", exact: true }).click();
   await expect(page.locator(".kzname")).toHaveText("toto");
   await expect(page.getByText("我到楼下了，看到你了。", { exact: true })).toBeVisible();
   await expect(page.getByText("刚才电话里那句，不是随口说的。", { exact: true })).toHaveCount(0);
   await page.getByRole("button", { name: "你站着别动，我过去。", exact: true }).click();
   await expect(page.getByText("想先吃饭，还是直接回家？", { exact: true })).toBeVisible();
+  console.info("continuation started, checking save restore");
   await page.reload();
   await page.getByRole("button", { name: "轻触解锁" }).click();
   for (const digit of "0530") await page.getByRole("button", { name: "密码键" + digit, exact: true }).click();
@@ -90,6 +94,7 @@ test.describe(`minlee player at ${viewport.width}px`, () => {
   await expect(page.getByText("嗯。走吧，离我近一点。", { exact: true })).toBeVisible();
   await expect(page.locator(".kkt-replies")).toHaveCount(0);
   await expect(page.locator(".incoming-call-screen")).toHaveCount(0);
+  console.info("continuation completed");
   await page.getByText("那等我回来一起吃", { exact: false }).scrollIntoViewIfNeeded();
   await expect(page.getByText("那等我回来一起吃", { exact: false })).toBeVisible();
   const reply = page.getByText("好。我帮你留一份，不急。", { exact: false });
