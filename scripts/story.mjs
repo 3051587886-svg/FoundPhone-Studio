@@ -101,8 +101,9 @@ try {
       JSON.stringify(z.toJSONSchema(storySchema), null, 2) + "\n",
     );
   } else if (mode === "build") {
+    const { packWork } = await server.ssrLoadModule("/src/story-engine/workBundle.ts");
     await mkdir("public", { recursive: true });
-    await writeFile("public/work.json", JSON.stringify(work, null, 2) + "\n");
+    await writeFile("public/work.json", JSON.stringify(packWork(work), null, 2) + "\n");
     const blank = compileStory(
       JSON.parse(await readFile("stories/blank/story.json", "utf8")),
     ).work;
