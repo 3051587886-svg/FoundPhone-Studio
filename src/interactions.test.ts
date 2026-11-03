@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { musicLink } from "./musicLinks";
+import { musicLink, musicEmbed } from "./musicLinks";
 import { parseCallDialogue, validCallHistory } from "./callDialogue";
 describe("external music links", () => {
   it("allows only HTTPS YouTube watch links and canonicalizes query parameters", () => {
@@ -19,4 +19,12 @@ describe("interactive call data", () => {
   it("ignores invalid scripts and missing fields", () => {
     for (const script of ["alert(1)", "{}", "[]", JSON.stringify([{ line: "hello", choices: [] }]), JSON.stringify([{ line: "hello", choices: [{ label: "hi" }] }]), undefined]) expect(parseCallDialogue(script)).toBeNull();
   });
+});
+
+it("builds inline player URLs only from supported watch links", () => {
+  const url = new URL(musicEmbed("https://www.youtube.com/watch?v=pSUydWEqKwE", "https://example.test"));
+  expect(url.origin + url.pathname).toBe("https://www.youtube.com/embed/pSUydWEqKwE");
+  expect(url.searchParams.get("playsinline")).toBe("1");
+  expect(url.searchParams.get("origin")).toBe("https://example.test");
+  expect(musicEmbed("javascript:alert(1)", "https://example.test")).toBe("");
 });

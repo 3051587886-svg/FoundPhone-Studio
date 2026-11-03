@@ -659,17 +659,24 @@ function PhoneRuntime({
                   className="decline-call"
                   onClick={() => {
                     const call = runtimeRef.current.incomingCall;
-                    if (call)
-                      update(
-                        dispatch(
-                          work,
-                          { ...runtimeRef.current, incomingCall: null },
-                          call.status === "ringing"
-                            ? "callDeclined"
-                            : "callEnded",
-                          call.target || call.caller,
-                        ),
+                    if (call) {
+                      let next = dispatch(
+                        work, { ...runtimeRef.current, incomingCall: null },
+                        call.status === "ringing" ? "callDeclined" : "callEnded",
+                        call.target || call.caller,
                       );
+                      const record = work.data.phone?.find((item) => item.id === call.target);
+                      const chatApp = record?.meta.afterCallApp;
+                      const chatThread = record?.meta.afterCallThread;
+                      if (call.status === "answered" && chatApp && chatThread &&
+                          work.apps.some((app) => app.id === chatApp && app.installed)) {
+                        next = { ...next, ui: { ...next.ui, [chatApp]: {
+                          ...next.ui?.[chatApp], activeThread: chatThread,
+                        } } };
+                        update(next);
+                        open(chatApp);
+                      } else update(next);
+                    }
                   }}
                 >
                   <PhoneIcon size={25} />
@@ -907,7 +914,13 @@ function AppContent({
   work: Work;
 }) {
   const [detail, setDetail] = useState<Item | null>(null);
-  const [thread, setThread] = useState("");
+  const [thread, updateThread] = useState("");
+  const requestedThread = state.ui?.[app.id]?.activeThread;
+  useEffect(() => { if (typeof requestedThread === "string") updateThread(requestedThread); }, [requestedThread]);
+  const setThread = (title: string) => {
+    updateThread(title);
+    onUi?.("activeThread", title);
+  };
   const [tab, setTab] = useState(app.tabs[0]);
   const [q, setQ] = useState("");
   const [pw, setPw] = useState("");

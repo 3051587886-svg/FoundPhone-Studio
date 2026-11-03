@@ -52,7 +52,7 @@ test.describe(`minlee player at ${viewport.width}px`, () => {
     const row = page.locator(".kzkcr").filter({ hasText: name });
     await expect(row.locator(".kzkn b")).toHaveText(name);
     await row.click();
-    await expect(page.locator(".kzbub")).toHaveCount(6);
+    await expect(page.locator(".kzbub")).toHaveCount(7);
     await page.waitForTimeout(2200);
     await expect(page.locator(".incoming-call-screen")).toHaveCount(0);
     await page.getByRole("button", { name: "返回", exact: true }).click();
@@ -73,6 +73,23 @@ test.describe(`minlee player at ${viewport.width}px`, () => {
   await expect(dialogue).toContainText("我马上就到了");
   await expect(dialogue.getByRole("button")).toHaveCount(0);
   await page.getByRole("button", { name: "挂断", exact: true }).click();
+  await expect(page.locator(".kzname")).toHaveText("toto");
+  await expect(page.getByText("我到楼下了，看到你了。", { exact: true })).toBeVisible();
+  await expect(page.getByText("刚才电话里那句，不是随口说的。", { exact: true })).toHaveCount(0);
+  await page.getByRole("button", { name: "你站着别动，我过去。", exact: true }).click();
+  await expect(page.getByText("想先吃饭，还是直接回家？", { exact: true })).toBeVisible();
+  await page.reload();
+  await page.getByRole("button", { name: "轻触解锁" }).click();
+  for (const digit of "0530") await page.getByRole("button", { name: "密码键" + digit, exact: true }).click();
+  await page.getByRole("button", { name: "打开KakaoTalk", exact: true }).click();
+  await expect(page.locator(".kzname")).toHaveText("toto");
+  await expect(page.getByText("想先吃饭，还是直接回家？", { exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "一起吃点再回去。", exact: true }).click();
+  await expect(page.getByText("刚才电话里那句，不是随口说的。", { exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "我知道。", exact: true }).click();
+  await expect(page.getByText("嗯。走吧，离我近一点。", { exact: true })).toBeVisible();
+  await expect(page.locator(".kkt-replies")).toHaveCount(0);
+  await expect(page.locator(".incoming-call-screen")).toHaveCount(0);
   await page.getByText("那等我回来一起吃", { exact: false }).scrollIntoViewIfNeeded();
   await expect(page.getByText("那等我回来一起吃", { exact: false })).toBeVisible();
   const reply = page.getByText("好。我帮你留一份，不急。", { exact: false });
@@ -100,7 +117,14 @@ test("Instagram reference profile", async ({ page, request }) => {
   await expect(profile.locator(".pg2 button")).toHaveCount(4);
 });
 
-test("music apps expose listen links", async ({ page, request }) => {
+test("music apps play inline without navigation", async ({ page, request }) => {
+  // Mock the third-party player to test our integration without depending on external media availability.
+  await page.route("https://www.youtube.com/iframe_api", (route) => route.fulfill({
+    contentType: "application/javascript",
+    body: 'window.YT={Player:function(frame,options){this.destroy=function(){frame.remove()};this.playVideo=function(){};setTimeout(function(){options.events.onReady()},0)}};window.onYouTubeIframeAPIReady();'
+  }));
+  await page.route("https://www.youtube.com/embed/**", (route) => route.fulfill({ contentType: "text/html", body: "<button>播放</button>" }));
+
   const work = validateWork(unpackWork(await (await request.get("/work.json")).json()));
   const apps = [...work.apps].sort((a, b) => Number(["music", "spotify", "netease"].includes(b.id)) - Number(["music", "spotify", "netease"].includes(a.id)));
   await page.route("**/work.json", (route) => route.fulfill({ json: packWork({ ...work, apps }) }));
@@ -110,10 +134,15 @@ test("music apps expose listen links", async ({ page, request }) => {
   for (const name of ["音乐", "Spotify", "网易云音乐"]) {
     await page.getByRole("button", { name: "打开" + name, exact: true }).click();
     await page.getByRole("button").filter({ hasText: "Ditto" }).first().click();
-    const link = page.getByRole("link", { name: "收听Ditto", exact: true });
-    await expect(link).toHaveAttribute("href", "https://www.youtube.com/watch?v=pSUydWEqKwE");
-    await expect(link).toHaveAttribute("target", "_blank");
-    await expect(link).toHaveAttribute("rel", "noopener noreferrer");
+    const url = page.url();
+    await page.getByRole("button", { name: "站内播放Ditto", exact: true }).click();
+    const dialog = page.getByRole("dialog", { name: "正在播放 Ditto", exact: true });
+    await expect(dialog).toBeVisible();
+    await expect(dialog.locator("iframe")).toHaveAttribute("src", /youtube.com\/embed\/pSUydWEqKwE/);
+    await expect(dialog.getByRole("status")).toContainText("可在这里播放");
+    await expect(page).toHaveURL(url);
+    await page.getByRole("button", { name: "关闭播放器", exact: true }).click();
+    await expect(dialog).toHaveCount(0);
     await page.getByRole("button", { name: "返回桌面", exact: true }).click();
   }
 });

@@ -3,7 +3,7 @@
   "id": "minlee-payback-phone",
   "title": "minlee 的手机",
   "description": "虚构互动故事：泰国演员陈晓珉（minlee）与年纪小一些的陈拓安（toptap）同住出租屋，准备拍摄 payback 番外篇。toto 温柔细心，两人友情以上、恋人未满。对话、行程与动态均为创作，不代表现实私人记录。",
-  "revision": 8,
+  "revision": 9,
   "phone": {
     "owner": "陈晓珉 · minlee",
     "date": "2026-11-03",
@@ -1090,6 +1090,16 @@
           "senderId": "toto",
           "body": "好想你",
           "time": "2026-11-03 21:41"
+        },
+        {
+          "id": "kakao-toto-aftercall",
+          "senderId": "toto",
+          "body": "我到楼下了，看到你了。",
+          "time": "2026-11-03 21:42",
+          "hidden": true,
+          "meta": {
+            "chatDialogue": "[{\"line\":\"toto：我到楼下了，看到你了。\",\"choices\":[{\"label\":\"你站着别动，我过去。\",\"reply\":\"toto：好，慢慢走。我给你拿着伞。 \"},{\"label\":\"你怎么又没穿外套。\",\"reply\":\"toto：出来得急。等会儿回家就穿。\"}]},{\"line\":\"toto：想先吃饭，还是直接回家？\",\"choices\":[{\"label\":\"一起吃点再回去。\",\"reply\":\"toto：好，还是那家。今天换我听你点。 \"},{\"label\":\"想回家了。\",\"reply\":\"toto：那我陪你回去，冰箱里还有你切的芒果。\"}]},{\"line\":\"toto：刚才电话里那句，不是随口说的。\",\"choices\":[{\"label\":\"我知道。\",\"reply\":\"toto：嗯。走吧，离我近一点。 \"},{\"label\":\"回去再说。\",\"reply\":\"toto：好，我不催你。我们慢慢走。\"}]}]"
+          }
         }
       ]
     },
@@ -1137,6 +1147,16 @@
           "senderId": "kakao-colleague",
           "body": "不客气。",
           "time": "2026-11-03 18:23"
+        },
+        {
+          "id": "kakao-colleague-interactive",
+          "senderId": "kakao-colleague",
+          "body": "资料发你邮箱了，方便时确认一下。",
+          "time": "2026-11-03 21:42",
+          "hidden": false,
+          "meta": {
+            "chatDialogue": "[{\"line\":\"同事：资料发你邮箱了，方便时确认一下。\",\"choices\":[{\"label\":\"好的，稍后确认。\",\"reply\":\"同事：收到，如有问题随时联系。 \"},{\"label\":\"已收到，谢谢。\",\"reply\":\"同事：不客气，明天现场见。\"}]},{\"line\":\"同事：明天需要帮忙带资料吗？\",\"choices\":[{\"label\":\"不用了，我这边已准备好。\",\"reply\":\"同事：好的。 \"},{\"label\":\"麻烦多带一份备用，谢谢。\",\"reply\":\"同事：好的，我会准备。\"}]}]"
+          }
         }
       ]
     },
@@ -1184,6 +1204,16 @@
           "senderId": "owner",
           "body": "谢谢，您也早点休息。",
           "time": "2026-11-03 18:23"
+        },
+        {
+          "id": "kakao-boss-interactive",
+          "senderId": "kakao-boss",
+          "body": "明天出发前再确认一下时间。",
+          "time": "2026-11-03 21:42",
+          "hidden": false,
+          "meta": {
+            "chatDialogue": "[{\"line\":\"老板：明天出发前再确认一下时间。\",\"choices\":[{\"label\":\"好的，我会提前确认。\",\"reply\":\"老板：好，有变动及时反馈。 \"},{\"label\":\"收到，确认后向您反馈。\",\"reply\":\"老板：辛苦了。\"}]},{\"line\":\"老板：今天先休息吧。\",\"choices\":[{\"label\":\"好的，谢谢。\",\"reply\":\"老板：晚安。 \"},{\"label\":\"好的，您也早点休息。\",\"reply\":\"老板：谢谢，明天见。\"}]}]"
+          }
         }
       ]
     },
@@ -1622,7 +1652,9 @@
         "meta": {
           "status": "来电",
           "transcript": "true",
-          "callDialogue": "[{\"line\":\"toto：哥，你在哪呢？我来接你。\",\"choices\":[{\"label\":\"在楼下，刚出来。\",\"reply\":\"toto：好，站里面一点，外面有风。\"},{\"label\":\"还在门口，等你。\",\"reply\":\"toto：我快到了，你先别走远。\"}]},{\"line\":\"toto：晚饭吃了吗？\",\"choices\":[{\"label\":\"还没，等你一起。\",\"reply\":\"toto：那去上次那家吧，我陪你吃。\"},{\"label\":\"吃了一点，你呢？\",\"reply\":\"toto：也吃了一点，等会儿陪你慢慢走回去。\"}]},{\"line\":\"toto：其实……就是有点想你。\",\"choices\":[{\"label\":\"才分开一会儿。\",\"reply\":\"toto：嗯，我知道。还是想早点见到你。\"},{\"label\":\"那你快点来。\",\"reply\":\"toto：好。你别急，我马上就到了。\"}]}]"
+          "callDialogue": "[{\"line\":\"toto：哥，你在哪呢？我来接你。\",\"choices\":[{\"label\":\"在楼下，刚出来。\",\"reply\":\"toto：好，站里面一点，外面有风。\"},{\"label\":\"还在门口，等你。\",\"reply\":\"toto：我快到了，你先别走远。\"}]},{\"line\":\"toto：晚饭吃了吗？\",\"choices\":[{\"label\":\"还没，等你一起。\",\"reply\":\"toto：那去上次那家吧，我陪你吃。\"},{\"label\":\"吃了一点，你呢？\",\"reply\":\"toto：也吃了一点，等会儿陪你慢慢走回去。\"}]},{\"line\":\"toto：其实……就是有点想你。\",\"choices\":[{\"label\":\"才分开一会儿。\",\"reply\":\"toto：嗯，我知道。还是想早点见到你。\"},{\"label\":\"那你快点来。\",\"reply\":\"toto：好。你别急，我马上就到了。\"}]}]",
+          "afterCallApp": "kakao",
+          "afterCallThread": "toto"
         }
       }
     ],
@@ -2693,6 +2725,19 @@
       "type": "ending",
       "event": "callDeclined",
       "target": "toto-voice-call"
+    },
+    {
+      "id": "toto-chat-after-call",
+      "label": "挂断后继续聊天",
+      "event": "callEnded",
+      "target": "toto-voice-call",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "kakao-toto-aftercall",
+          "value": true
+        }
+      ]
     }
   ],
   "tests": [
@@ -2713,9 +2758,16 @@
         {
           "event": "callAnswered",
           "target": "toto-voice-call"
+        },
+        {
+          "event": "callEnded",
+          "target": "toto-voice-call"
         }
       ],
-      "ending": "已接听 toto 的电话"
+      "ending": "已接听 toto 的电话",
+      "expectUnlocked": [
+        "kakao-toto-aftercall"
+      ]
     },
     {
       "name": "打开聊天两秒后拒接",
