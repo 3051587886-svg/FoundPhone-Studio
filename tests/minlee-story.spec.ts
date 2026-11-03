@@ -24,7 +24,7 @@ test.describe(`minlee player at ${viewport.width}px`, () => {
   const apps = [...work.apps].sort((a, b) => Number(b.id === "kakao") - Number(a.id === "kakao"));
   await page.route("**/work.json", (route) => route.fulfill({ json: packWork({ ...work, apps }) }));
   const errors: string[] = [];
-  page.on("pageerror", (error) => errors.push(error.message));
+  page.on("pageerror", (error) => { errors.push(error.message); console.info("page error", error.message); });
   await page.goto("/");
   const screen = page.locator(".phone-screen");
   await expect(page.getByRole("button", { name: "轻触解锁" })).toBeVisible();
@@ -75,11 +75,12 @@ test.describe(`minlee player at ${viewport.width}px`, () => {
   await expect(dialogue).toContainText("我马上就到了");
   await expect(dialogue.getByRole("button")).toHaveCount(0);
   console.info("call choices checked");
-  await page.getByRole("button", { name: "挂断", exact: true }).click();
-  await expect(page.locator(".kzname")).toHaveText("toto");
+  await page.getByRole("button", { name: "挂断", exact: true }).click({ timeout: 5000 });
+  console.info("hangup clicked", await page.locator(".phone-screen").innerText());
+  await expect(page.locator(".kzname")).toHaveText("toto", { timeout: 5000 });
   await expect(page.getByText("我到楼下了，看到你了。", { exact: true })).toBeVisible();
   await expect(page.getByText("刚才电话里那句，不是随口说的。", { exact: true })).toHaveCount(0);
-  await page.getByRole("button", { name: "你站着别动，我过去。", exact: true }).click();
+  await page.getByRole("button", { name: "你站着别动，我过去。", exact: true }).click({ timeout: 5000 });
   await expect(page.getByText("想先吃饭，还是直接回家？", { exact: true })).toBeVisible();
   console.info("continuation started, checking save restore");
   await page.reload();
