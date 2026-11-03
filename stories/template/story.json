@@ -1,14 +1,14 @@
 {
   "scriptVersion": 1,
-  "id": "ui-test-phone-v2",
-  "title": "捡手机",
-  "description": "仅用于界面测试，不含剧情",
-  "revision": 2,
+  "id": "minlee-payback-phone",
+  "title": "minlee 的手机",
+  "description": "虚构互动故事：泰国演员陈晓珉（minlee）与陈拓安（toptap）合作出演 payback 后的暧昧日常。对话、行程与动态均为创作，不代表现实私人记录。",
+  "revision": 3,
   "phone": {
-    "owner": "机主",
-    "date": "2026-10-25",
-    "time": "09:41",
-    "battery": 94,
+    "owner": "陈晓珉 · minlee",
+    "date": "2026-11-03",
+    "time": "21:41",
+    "battery": 76,
     "network": "5G",
     "wallpaper": "apple-wwdc26"
   },
@@ -89,607 +89,630 @@
   ],
   "contacts": [
     {
-      "id": "test-contact",
-      "name": "测试联系人",
+      "id": "toptap",
+      "name": "toptap",
+      "bio": "陈拓安｜一起出演 payback 的搭档。总能找到见面的理由。",
       "phone": "",
-      "bio": "这是一条测试内容。"
+      "avatar": ""
+    },
+    {
+      "id": "assistant",
+      "name": "工作助理",
+      "bio": "虚构工作联系人｜通告、采访与日程协调。",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "friend",
+      "name": "今天也想放假",
+      "bio": "虚构圈外朋友｜知道 minlee 最近总在看手机。",
+      "phone": "",
+      "avatar": ""
     }
   ],
   "chats": [
     {
-      "id": "test-chat-messages",
-      "app": "messages",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messages",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-wechat",
-      "app": "wechat",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-wechat",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-qq",
-      "app": "qq",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-qq",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-whatsapp",
-      "app": "whatsapp",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-whatsapp",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-telegram",
-      "app": "telegram",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-telegram",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-discord",
-      "app": "discord",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-discord",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-line",
+      "id": "line-toptap",
       "app": "line",
-      "title": "测试会话",
+      "title": "toptap",
       "participants": [
         "owner",
-        "test-contact"
+        "toptap"
       ],
       "messages": [
         {
-          "id": "test-message-line",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-messenger",
-      "app": "messenger",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messenger",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-kakao",
-      "app": "kakao",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-kakao",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
+          "id": "line-toptap-01",
+          "senderId": "toptap",
+          "time": "2026-11-01 22:16",
+          "body": "到家了吗",
+          "title": "toptap"
         },
         {
-          "id": "test-reply-kakao",
-          "body": "这是一条测试回复。",
-          "senderId": "owner"
+          "id": "line-toptap-02",
+          "senderId": "owner",
+          "time": "2026-11-01 22:18",
+          "body": "刚到。你呢",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-03",
+          "senderId": "toptap",
+          "time": "2026-11-01 22:18",
+          "body": "还没。等你回完这句就走",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-04",
+          "senderId": "owner",
+          "time": "2026-11-01 22:19",
+          "body": "你还在楼下？",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-05",
+          "senderId": "toptap",
+          "time": "2026-11-01 22:19",
+          "body": "现在走了。早点睡，明天见",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-06",
+          "senderId": "owner",
+          "time": "2026-11-01 22:20",
+          "body": "明天没双人通告",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-07",
+          "senderId": "toptap",
+          "time": "2026-11-01 22:20",
+          "body": "我知道。问的是你有没有空吃饭",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-08",
+          "senderId": "owner",
+          "time": "2026-11-01 22:23",
+          "body": "看几点",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-09",
+          "senderId": "toptap",
+          "time": "2026-11-01 22:23",
+          "body": "你有空的那几点",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-10",
+          "senderId": "toptap",
+          "time": "2026-11-02 11:42",
+          "body": "吃午饭了吗",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-11",
+          "senderId": "owner",
+          "time": "2026-11-02 11:45",
+          "body": "准备点",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-12",
+          "senderId": "toptap",
+          "time": "2026-11-02 11:45",
+          "body": "先别点。我多买了一份",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-13",
+          "senderId": "owner",
+          "time": "2026-11-02 11:46",
+          "body": "又刚好多买？",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-14",
+          "senderId": "toptap",
+          "time": "2026-11-02 11:46",
+          "body": "嗯，连你不吃香菜都刚好记得",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-15",
+          "senderId": "owner",
+          "time": "2026-11-02 11:47",
+          "body": "放门口就好，我头发乱着",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-16",
+          "senderId": "toptap",
+          "time": "2026-11-02 11:47",
+          "body": "拍 payback 夜戏的时候更乱，我也看过",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-17",
+          "senderId": "owner",
+          "time": "2026-11-02 11:48",
+          "body": "那不是同一回事",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-18",
+          "senderId": "toptap",
+          "time": "2026-11-02 11:49",
+          "body": "好。我在门口，不催你",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-19",
+          "senderId": "owner",
+          "time": "2026-11-02 11:51",
+          "body": "等两分钟",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-20",
+          "senderId": "toptap",
+          "time": "2026-11-03 08:12",
+          "body": "今天我去接你？",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-21",
+          "senderId": "owner",
+          "time": "2026-11-03 08:17",
+          "body": "你不是走另一个方向",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-22",
+          "senderId": "toptap",
+          "time": "2026-11-03 08:17",
+          "body": "早点出门就顺路了",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-23",
+          "senderId": "owner",
+          "time": "2026-11-03 08:18",
+          "body": "这叫绕路",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-24",
+          "senderId": "toptap",
+          "time": "2026-11-03 08:18",
+          "body": "好，那我绕路来接你",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-25",
+          "senderId": "owner",
+          "time": "2026-11-03 08:20",
+          "body": "九点。到了发消息",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-26",
+          "senderId": "toptap",
+          "time": "2026-11-03 08:20",
+          "body": "早餐想吃什么",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-27",
+          "senderId": "owner",
+          "time": "2026-11-03 08:21",
+          "body": "你这是接人还是开店",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-28",
+          "senderId": "toptap",
+          "time": "2026-11-03 08:21",
+          "body": "只接你。店不开",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-29",
+          "senderId": "toptap",
+          "time": "2026-11-03 18:36",
+          "body": "采访那句你别紧张",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-30",
+          "senderId": "owner",
+          "time": "2026-11-03 18:40",
+          "body": "哪句",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-31",
+          "senderId": "toptap",
+          "time": "2026-11-03 18:40",
+          "body": "问我们不工作的时候会不会见面",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-32",
+          "senderId": "owner",
+          "time": "2026-11-03 18:41",
+          "body": "你回答得太快了",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-33",
+          "senderId": "toptap",
+          "time": "2026-11-03 18:41",
+          "body": "因为不用想",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-34",
+          "senderId": "owner",
+          "time": "2026-11-03 18:43",
+          "body": "助理在旁边看你",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-35",
+          "senderId": "toptap",
+          "time": "2026-11-03 18:43",
+          "body": "我知道。你也在看我",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-36",
+          "senderId": "owner",
+          "time": "2026-11-03 18:45",
+          "body": "……",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-37",
+          "senderId": "toptap",
+          "time": "2026-11-03 21:31",
+          "body": "明天没有通告",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-38",
+          "senderId": "owner",
+          "time": "2026-11-03 21:33",
+          "body": "嗯，刚确认过",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-39",
+          "senderId": "toptap",
+          "time": "2026-11-03 21:33",
+          "body": "所以明天吃饭，不用说是工作",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-40",
+          "senderId": "owner",
+          "time": "2026-11-03 21:36",
+          "body": "你先发店给我",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-41",
+          "senderId": "toptap",
+          "time": "2026-11-03 21:37",
+          "body": "你上次说想去的那家。我订好再告诉你时间",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-42",
+          "senderId": "owner",
+          "time": "2026-11-03 21:39",
+          "body": "别又提前半小时到",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-43",
+          "senderId": "toptap",
+          "time": "2026-11-03 21:40",
+          "body": "那你早点下来，我就少等一会儿",
+          "title": "toptap"
+        },
+        {
+          "id": "line-toptap-44",
+          "senderId": "owner",
+          "time": "2026-11-03 21:41",
+          "body": "知道了",
+          "title": "toptap"
+        }
+      ]
+    },
+    {
+      "id": "line-work",
+      "app": "line",
+      "title": "payback · 工作联络",
+      "participants": [
+        "owner",
+        "assistant",
+        "toptap"
+      ],
+      "messages": [
+        {
+          "id": "line-work-01",
+          "senderId": "assistant",
+          "time": "2026-11-02 17:00",
+          "body": "明天双人采访，10:00 化妆，11:30 开始。服装已和现场确认。",
+          "title": "payback · 工作联络"
+        },
+        {
+          "id": "line-work-02",
+          "senderId": "owner",
+          "time": "2026-11-02 17:05",
+          "body": "收到",
+          "title": "payback · 工作联络"
+        },
+        {
+          "id": "line-work-03",
+          "senderId": "toptap",
+          "time": "2026-11-02 17:06",
+          "body": "收到。我接 minlee 过去",
+          "title": "payback · 工作联络"
+        },
+        {
+          "id": "line-work-04",
+          "senderId": "assistant",
+          "time": "2026-11-02 17:08",
+          "body": "车已经排好了，你们也可以各自到场。",
+          "title": "payback · 工作联络"
+        },
+        {
+          "id": "line-work-05",
+          "senderId": "toptap",
+          "time": "2026-11-02 17:08",
+          "body": "没关系，我这边方便",
+          "title": "payback · 工作联络"
+        },
+        {
+          "id": "line-work-06",
+          "senderId": "owner",
+          "time": "2026-11-02 17:11",
+          "body": "我还没说要坐你的车",
+          "title": "payback · 工作联络"
+        },
+        {
+          "id": "line-work-07",
+          "senderId": "toptap",
+          "time": "2026-11-02 17:12",
+          "body": "那我等你说",
+          "title": "payback · 工作联络"
+        },
+        {
+          "id": "line-work-08",
+          "senderId": "assistant",
+          "time": "2026-11-02 17:14",
+          "body": "交通问题请移步私聊。这里明天还要发通告🙏",
+          "title": "payback · 工作联络"
+        },
+        {
+          "id": "line-work-09",
+          "senderId": "assistant",
+          "time": "2026-11-03 18:10",
+          "body": "今天辛苦了。明天无通告，可以休息。采访物料等确认后再发。",
+          "title": "payback · 工作联络"
+        },
+        {
+          "id": "line-work-10",
+          "senderId": "owner",
+          "time": "2026-11-03 18:12",
+          "body": "辛苦了！",
+          "title": "payback · 工作联络"
+        },
+        {
+          "id": "line-work-11",
+          "senderId": "toptap",
+          "time": "2026-11-03 18:13",
+          "body": "辛苦了",
+          "title": "payback · 工作联络"
+        }
+      ]
+    },
+    {
+      "id": "wechat-friend",
+      "app": "wechat",
+      "title": "今天也想放假",
+      "participants": [
+        "owner",
+        "friend"
+      ],
+      "messages": [
+        {
+          "id": "wechat-friend-01",
+          "senderId": "friend",
+          "time": "2026-11-02 20:05",
+          "body": "你昨天不是说休息吗，怎么回消息比上班还慢",
+          "title": "今天也想放假"
+        },
+        {
+          "id": "wechat-friend-02",
+          "senderId": "owner",
+          "time": "2026-11-02 20:14",
+          "body": "在吃饭",
+          "title": "今天也想放假"
+        },
+        {
+          "id": "wechat-friend-03",
+          "senderId": "friend",
+          "time": "2026-11-02 20:14",
+          "body": "一个人吃饭还需要把手机倒扣？",
+          "title": "今天也想放假"
+        },
+        {
+          "id": "wechat-friend-04",
+          "senderId": "owner",
+          "time": "2026-11-02 20:15",
+          "body": "你怎么知道我倒扣",
+          "title": "今天也想放假"
+        },
+        {
+          "id": "wechat-friend-05",
+          "senderId": "friend",
+          "time": "2026-11-02 20:15",
+          "body": "随口一猜。谢谢配合审讯",
+          "title": "今天也想放假"
+        },
+        {
+          "id": "wechat-friend-06",
+          "senderId": "owner",
+          "time": "2026-11-02 20:17",
+          "body": "toptap 带了饭过来",
+          "title": "今天也想放假"
+        },
+        {
+          "id": "wechat-friend-07",
+          "senderId": "friend",
+          "time": "2026-11-02 20:17",
+          "body": "懂了，外卖已经进化到陪吃服务",
+          "title": "今天也想放假"
+        },
+        {
+          "id": "wechat-friend-08",
+          "senderId": "owner",
+          "time": "2026-11-02 20:18",
+          "body": "普通吃饭",
+          "title": "今天也想放假"
+        },
+        {
+          "id": "wechat-friend-09",
+          "senderId": "friend",
+          "time": "2026-11-02 20:18",
+          "body": "嗯嗯。请继续普通，不要停止汇报",
+          "title": "今天也想放假"
+        },
+        {
+          "id": "wechat-friend-10",
+          "senderId": "owner",
+          "time": "2026-11-03 19:02",
+          "body": "明天终于不用工作了",
+          "title": "今天也想放假"
+        },
+        {
+          "id": "wechat-friend-11",
+          "senderId": "friend",
+          "time": "2026-11-03 19:04",
+          "body": "那你是不是终于能见我了",
+          "title": "今天也想放假"
+        },
+        {
+          "id": "wechat-friend-12",
+          "senderId": "owner",
+          "time": "2026-11-03 19:05",
+          "body": "明天可能有事",
+          "title": "今天也想放假"
+        },
+        {
+          "id": "wechat-friend-13",
+          "senderId": "friend",
+          "time": "2026-11-03 19:05",
+          "body": "工作群刚放假，私人日程就上岗了？",
+          "title": "今天也想放假"
+        },
+        {
+          "id": "wechat-friend-14",
+          "senderId": "owner",
+          "time": "2026-11-03 19:07",
+          "body": "还没定",
+          "title": "今天也想放假"
+        },
+        {
+          "id": "wechat-friend-15",
+          "senderId": "friend",
+          "time": "2026-11-03 19:08",
+          "body": "你以前拒绝我都是直接说不去。现在还知道留时间给人家",
+          "title": "今天也想放假"
         }
       ]
     }
   ],
   "content": {
-    "phone": [
-      {
-        "id": "test-item-phone",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "contacts": [
-      {
-        "id": "test-item-contacts",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "photos": [
-      {
-        "id": "test-item-photos",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "camera": [
-      {
-        "id": "test-item-camera",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "safari": [
-      {
-        "id": "test-item-safari",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
     "notes": [
       {
-        "id": "test-item-notes",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "note-profile",
+        "title": "手机里的我",
+        "body": "陈晓珉 / minlee\n泰国演员。\n和陈拓安 / toptap 一起出演 payback。\n\n本作品是按人物设定创作的虚构故事，聊天、工作安排及社交内容均非现实记录。",
+        "time": "2026-11-01 09:00"
+      },
+      {
+        "id": "note-interview",
+        "title": "采访前记一下",
+        "body": "聊 payback 的合作感受。\n不要抢对方的话。\n如果被问到私下会不会见面，正常回答就好。\n\n补：他怎么答得那么快。",
+        "time": "2026-11-03 18:25"
+      },
+      {
+        "id": "note-little-things",
+        "title": "杂记",
+        "body": "他记得我不吃香菜。\n上次借的外套还在椅背上，洗好了。\n明天带给他。\n\n其实也可以让他再来拿一次。",
+        "time": "2026-11-03 20:48"
       }
     ],
     "calendar": [
       {
-        "id": "test-item-calendar",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "mail": [
-      {
-        "id": "test-item-mail",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "clock": [
-      {
-        "id": "test-item-clock",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "calendar-interview",
+        "title": "payback 双人采访",
+        "body": "10:00 化妆，11:30 开始。\n与 toptap 一起到场。",
+        "time": "2026-11-03 10:00",
+        "kind": "event"
       }
     ],
     "reminders": [
       {
-        "id": "test-item-reminders",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "files": [
-      {
-        "id": "test-item-files",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "music": [
-      {
-        "id": "test-item-music",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "maps": [
-      {
-        "id": "test-item-maps",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "weather": [
-      {
-        "id": "test-item-weather",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "wallet": [
-      {
-        "id": "test-item-wallet",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "health": [
-      {
-        "id": "test-item-health",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "find": [
-      {
-        "id": "test-item-find",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "calculator": [
-      {
-        "id": "test-item-calculator",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "settings": [
-      {
-        "id": "test-item-settings",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "weibo": [
-      {
-        "id": "test-item-weibo",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "redbook": [
-      {
-        "id": "test-item-redbook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "douyin": [
-      {
-        "id": "test-item-douyin",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "bilibili": [
-      {
-        "id": "test-item-bilibili",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "alipay": [
-      {
-        "id": "test-item-alipay",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "taobao": [
-      {
-        "id": "test-item-taobao",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netease": [
-      {
-        "id": "test-item-netease",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "delivery": [
-      {
-        "id": "test-item-delivery",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "forum": [
-      {
-        "id": "test-item-forum",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "reminder-jacket",
+        "title": "带上外套",
+        "body": "明天出门前拿上洗好的外套，别又忘在椅背上。",
+        "time": "2026-11-04 10:00"
       }
     ],
     "instagram": [
       {
-        "id": "test-item-instagram",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "tiktok": [
+        "id": "ig-minlee-post",
+        "title": "收工",
+        "body": "今天的采访结束。谢谢照顾。\n有人把我的咖啡也一起拎走了，记得还。",
+        "time": "2026-11-03 18:28",
+        "sender": "minlee",
+        "kind": "post",
+        "comments": [
+          "toptap：咖啡在我这，人也可以过来。",
+          "minlee 回复 toptap：我就在你旁边。",
+          "今天也想放假：相距一米，跨平台寻人。"
+        ]
+      },
       {
-        "id": "test-item-tiktok",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "ig-toptap-post",
+        "title": "晚饭",
+        "body": "多买一份，就有人陪我吃了。",
+        "time": "2026-11-02 19:10",
+        "sender": "toptap",
+        "kind": "post",
+        "comments": [
+          "minlee：不是你说一个人吃不完的吗。",
+          "toptap 回复 minlee：下次也吃不完。"
+        ]
       }
     ],
     "twitter": [
       {
-        "id": "test-item-twitter",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "youtube": [
-      {
-        "id": "test-item-youtube",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "snapchat": [
-      {
-        "id": "test-item-snapchat",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "facebook": [
-      {
-        "id": "test-item-facebook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "reddit": [
-      {
-        "id": "test-item-reddit",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "spotify": [
-      {
-        "id": "test-item-spotify",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netflix": [
-      {
-        "id": "test-item-netflix",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "pinterest": [
-      {
-        "id": "test-item-pinterest",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "threads": [
-      {
-        "id": "test-item-threads",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      },
-      {
-        "id": "test-threads-message-1",
-        "title": "测试会话1",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人1",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-1",
-        "title": "测试动态1",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户1",
-        "meta": {
-          "activityType": "reply"
-        }
-      },
-      {
-        "id": "test-threads-message-2",
-        "title": "测试会话2",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人2",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-2",
-        "title": "测试动态2",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户2",
-        "meta": {
-          "activityType": "reply"
-        }
-      },
-      {
-        "id": "test-threads-message-3",
-        "title": "测试会话3",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人3",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-3",
-        "title": "测试动态3",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户3",
-        "meta": {
-          "activityType": "reply"
-        }
-      }
-    ],
-    "appstore": [
-      {
-        "id": "test-appstore",
-        "title": "测试内容",
-        "body": "这是一条测试内容。"
+        "id": "x-minlee",
+        "title": "明天休息",
+        "body": "终于不用设那么早的闹钟了。",
+        "time": "2026-11-03 19:10",
+        "sender": "minlee",
+        "kind": "post",
+        "comments": [
+          "toptap：醒了告诉我。",
+          "今天也想放假：休息日还有人查岗，我先睡了。"
+        ]
       }
     ]
   },
